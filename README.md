@@ -46,5 +46,20 @@ To host your app follow these steps -
  - In Heroku App Setting, copy all the `.env` file contents.
  - Add a hobby dev Postgres server from Heroku addons
 <hr>
+
+### Questionnaire
+
+- Are there any sub-optimal choices( or short cuts taken due to limited time ) in your implementation?
+Ans : No shortcuts taken. Used free crypto APIs to create a simple web app.
+
+- Is any part of it over-designed? ( It is fine to over-design to showcase your skills as long as you are clear about it)
+Ans : No part of the app is overdesigned, used a free dashboard library ([Tabler](https://tabler.io/)) for the UI components.
+
+- If you have to scale your solution to 100 users/second traffic what changes would you make, if any?
+Ans : Have multiple instances running on a globally distributed infrastructure and make all requests async.
+
+- What are some other enhancements you would have made, if you had more time to do this implementation
+Ans : Realtime charts showing live prices and historic data.
+
 ## Author
 #### Archana Turaga
