@@ -1,14 +1,17 @@
 from flask import Flask, render_template, jsonify
 from tinydb import TinyDB
 from tinydb.table import Document
+from dotenv import load_dotenv
 import requests
+import os
+load_dotenv()
 
 app = Flask(__name__)
 db = TinyDB('db.json')
 
 def get_payload():
     return {
-        'token': 'abd90df5f27a7b170cd775abf89d632b350b7c1c9d53e08b340cd9832ce52c2c'
+        'token': os.getenv('COINBASE_TOKEN')
     }
 
 @app.route('/')
